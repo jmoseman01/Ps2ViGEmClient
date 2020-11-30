@@ -55,60 +55,61 @@ namespace ConsoleApp1
                     handler.Receive(bytes);
                     string[] mybytes = { bytes[0].ToString(), bytes[1].ToString(), bytes[2].ToString() };
                     Console.WriteLine("Text received : {0} {1} {2}", mybytes);
+                    int sleepTime = 25;
                     
                     // up
                     if (bytes[0].ToString().Equals("16")) {
                         controller.SetButtonState(Xbox360Button.Up, true);
-                        Thread.Sleep(10);
+                        Thread.Sleep(sleepTime);
                         controller.SetButtonState(Xbox360Button.Up, false);
                     }
                     // right
                     if (bytes[0].ToString().Equals("32"))
                     {
                         controller.SetButtonState(Xbox360Button.Right, true);
-                        Thread.Sleep(10);
+                        Thread.Sleep(sleepTime);
                         controller.SetButtonState(Xbox360Button.Right, false);
                     }
                     // left
                     if (bytes[0].ToString().Equals("128"))
                     {
                         controller.SetButtonState(Xbox360Button.Left, true);
-                        Thread.Sleep(10);
+                        Thread.Sleep(sleepTime);
                         controller.SetButtonState(Xbox360Button.Left, false);
                     }
                     // down
                     if (bytes[0].ToString().Equals("64"))
                     {
                         controller.SetButtonState(Xbox360Button.Down, true);
-                        Thread.Sleep(10);
+                        Thread.Sleep(sleepTime);
                         controller.SetButtonState(Xbox360Button.Down, false);
                     }
                     // X
                     if (bytes[1].ToString().Equals("64"))
                     {
                         controller.SetButtonState(Xbox360Button.A, true);
-                        Thread.Sleep(10);
+                        Thread.Sleep(sleepTime);
                         controller.SetButtonState(Xbox360Button.A, false);
                     }
                     // circle
                     if (bytes[1].ToString().Equals("32"))
                     {
                         controller.SetButtonState(Xbox360Button.B, true);
-                        Thread.Sleep(10);
+                        Thread.Sleep(sleepTime);
                         controller.SetButtonState(Xbox360Button.B, false);
                     }
                     // triangle
                     if (bytes[1].ToString().Equals("16"))
                     {
                         controller.SetButtonState(Xbox360Button.Y, true);
-                        Thread.Sleep(10);
+                        Thread.Sleep(sleepTime);
                         controller.SetButtonState(Xbox360Button.Y, false);
                     }
                     // square
                     if (bytes[1].ToString().Equals("128"))
                     {
                         controller.SetButtonState(Xbox360Button.X, true);
-                        Thread.Sleep(10);
+                        Thread.Sleep(sleepTime);
                         controller.SetButtonState(Xbox360Button.X, false);
                     }
                 }

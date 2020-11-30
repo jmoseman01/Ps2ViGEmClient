@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0MYqF+S41T0ZJ6cCjasa9PTdSkR9zxZp636ySDHYFCT3X/ndspTuDQe/7IFuz6lFyE/XWA9W9sGRiys6ARFpZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jmose\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jmose\\.nuget\\packages\\jetbrains.annotations\\2018.3.0\\jetbrains.annotations.2018.3.0.nupkg.sha512",
+    "C:\\Users\\jmose\\.nuget\\packages\\nefarius.vigem.client\\1.16.150\\nefarius.vigem.client.1.16.150.nupkg.sha512"
+  ],
+  "logs": []
+}
